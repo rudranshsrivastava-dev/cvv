@@ -4,10 +4,10 @@ $(function() {
 		message: [
 			'web development;', 
 			'eye candy design;',
-			'AI enthusiast;',
+			'AI;',
 			'good movie and popcorn;', 
-      'Software Developer, AR developer, AI,.. ;',
-			'sve što vole mladi;'
+      'Software Development, AR development, AI,.. ;',
+		
 		],
 		counterS: 0,
 		counterL: 0,
