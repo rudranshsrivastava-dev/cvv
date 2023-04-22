@@ -10,22 +10,38 @@ body {
   padding: 50px;
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 800px; /* add this line to limit the maximum width of the wrapper */
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+
 }
 
 .wrapper h1 {
-  font-size: 5rem;
-  margin-bottom: 10px;
   text-shadow: 2px 2px 0px #555;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 20px 0;
 }
 
 .wrapper h3 {
-  font-size: 2rem;
-  margin-bottom: 30px;
+  font-size: 25px;
+  line-height: 1.4;
+   margin: 10px 0;
 }
 
-.social {
-  margin-top: 50px;
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
 }
+
 
 .social a {
   display: inline-block;
@@ -35,6 +51,15 @@ body {
   text-shadow: 2px 2px 0px #555;
   transition: all 0.3s ease-in-out;
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* add this line to wrap the icons to a new line */
+  margin-top: 20px;
+}
+
 
 .social a:hover {
   transform: translateY(-5px);
